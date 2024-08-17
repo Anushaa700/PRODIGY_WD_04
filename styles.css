@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", Times, Times New Roman, serif;
+    background-color: #3e3e3e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.weather-app {
+    background: linear-gradient(135deg, #5585b5 0%, #53a8b6 100%);
+    color: #ededed;
+    padding: 37.5px 22px;
+    border-radius: 25px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+.weather-app h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+
+.weather-app input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.weather-app button {
+    background-color: #79c2d0;
+    color: #eff4f5;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.weather-app button:hover {
+    background-color: #bbe4e9;
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+.weather-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.weather-info p {
+    font-size: 1.2rem;
+}
+
+.weather-icon {
+    font-size: 130px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sunny {
+    color: #faf99f;
+}
+
+.cloudy {
+    color: #6b62ce;
+}
+
+.rainy {
+    color: #3e606f;
+}
+
+.snowy {
+    color: #b3e5fc;
+}
+
+.foggy {
+    color: #6d7c83;
+}
+
+.windy {
+    color: #3f6272;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes snow {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fog {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes wind {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
